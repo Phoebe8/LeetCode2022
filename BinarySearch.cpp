@@ -1,4 +1,4 @@
-// ЖўЗжВщев
+// B
 
 #include<iostream>
 #include<vector>
