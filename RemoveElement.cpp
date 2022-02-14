@@ -29,6 +29,13 @@ public:
 int main()
 {
     int a[] = { 0,1,2,2,3,0,4,2 };
+    cout << "in:" << endl;
+    for (int i = 0; i < (sizeof(a) / sizeof(int)); i++)
+    {
+        cout << a[i] << " ";
+    }
+    cout << endl << "out:" << endl;
+
     vector<int> nums(a, a + sizeof(a) / sizeof(int));
     Solution solution;
     cout << solution.removeElement(nums, 2) << endl;

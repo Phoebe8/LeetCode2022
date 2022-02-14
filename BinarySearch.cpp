@@ -1,4 +1,4 @@
-// B
+// ¶þ·Ö²éÕÒ
 
 #include<iostream>
 #include<vector>
@@ -32,6 +32,13 @@ public:
 int main()
 {
     int a[] = { -1,0,3,5,9,12 };
+    cout << "in:" << endl;
+    for (int i = 0; i < (sizeof(a) / sizeof(int)); i++)
+    {
+        cout << a[i] << " ";
+    }
+    cout << endl << "out:" << endl;
+
     vector<int> nums(a, a + sizeof(a) / sizeof(int));
     Solution solution;
     cout << solution.search(nums, 9) << endl;
